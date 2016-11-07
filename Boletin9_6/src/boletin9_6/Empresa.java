@@ -5,14 +5,19 @@
  */
 package boletin9_6;
 
+import javax.swing.JOptionPane;
+
 /**
  *
  * @author Jose Barros
  */
 public class Empresa {
-    public String cuentaSuel(float suel){
+    public String cuentaSuel(){
+        float suel=1;
+        
         int suelMil=0,suelMilSet=0,suelBajo=0;
         while(suel>0){
+            suel=Float.parseFloat(JOptionPane.showInputDialog("Introduzca el sueldo"));
             if(suel>=1000f&&suel<1750f){
                 suelMil++;
             }else if(suel>=1750){
