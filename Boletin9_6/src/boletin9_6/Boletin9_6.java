@@ -19,13 +19,8 @@ public class Boletin9_6 {
     public static void main(String[] args) {
         // TODO code application logic here
         Empresa emp=new Empresa();
-        float suel=1;
-        while(suel!=0){
-            suel=Float.parseFloat(JOptionPane.showInputDialog("Introduzca el sueldo"));
-            if(suel!=0){
-                System.out.println(emp.cuentaSuel(suel));
-            }
-        }
+        System.out.println(emp.cuentaSuel());
+       
     }
     
 }
