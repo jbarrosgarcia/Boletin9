@@ -23,7 +23,7 @@ public class Empresa {
             }else if(suel>=1750){
                 suelMilSet++;
             }
-            else{
+            else if(suel>0){
                 suelBajo++;
             }
         }
