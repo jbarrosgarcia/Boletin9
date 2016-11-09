@@ -10,8 +10,37 @@ package boletin9_5;
  * @author Jose Barros
  */
 public class Cadenas {
-    public void cadenaRestas(){
+    
+    public String cadenaFib(int cont){
+        String cadena="";
+         int fibo1,fibo2,i;
         
+        System.out.println("Los " + cont + " primeros términos de la serie de Fibonacci son:");
+
+        fibo1=0;
+        fibo2=1;
+
+        cadena=""+fibo1 + " ";
+        for(i=2;i<=cont;i++){
+             cadena=cadena+fibo2 + " ";
+             fibo2 = fibo1 + fibo2;
+             fibo1 = fibo2 - fibo1;
+        }
+    
+        return cadena;
+    }
+    public String cadenaRestas(int cont){
+        int i=0;
+        String cadena="";
+        while(i<=cont){
+            i++;
+            if(i%2==1){
+                cadena=cadena+" - "+i;
+            }else{
+                cadena=cadena+"+ "+i;
+            }
+        }
+        return cadena;
     }
     
     public String cadenaPar(int cont){
