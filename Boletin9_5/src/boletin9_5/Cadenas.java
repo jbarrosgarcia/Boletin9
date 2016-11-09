@@ -37,7 +37,7 @@ public class Cadenas {
             if(i%2==1){
                 cadena=cadena+" - "+i;
             }else{
-                cadena=cadena+"+ "+i;
+                cadena=cadena+" + "+i;
             }
         }
         return cadena;
