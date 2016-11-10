@@ -32,7 +32,7 @@ public class Cadenas {
     public String cadenaRestas(int cont){
         int i=0;
         String cadena="";
-        while(i<=cont){
+        while(i<cont){
             i++;
             if(i%2==1){
                 cadena=cadena+" - "+i;
