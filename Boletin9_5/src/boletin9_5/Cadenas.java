@@ -47,7 +47,7 @@ public class Cadenas {
         int i=0;
         int num=0;
         String cadena="2";
-        while(i<=cont){
+        while(i<cont){
             num++;
             if(num%2==0){
                 i++;
